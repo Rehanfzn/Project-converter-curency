@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="694.0" prefWidth="430.0" styleClass="container" stylesheets="@../styles/primary.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ProgressIndicator layoutX="189.0" layoutY="283.0" style="-fx-progress-color: #00c853;" />
+      <Label layoutX="184.0" layoutY="374.0" style="-fx-text-fill: WHITE;" text="Loading ..." textFill="WHITE" />
+      <HBox alignment="CENTER" layoutY="641.0" prefHeight="53.0" prefWidth="430.0" spacing="34.0" style="-fx-background-color: D3E9AB;" styleClass="bg-hbox">
+         <children>
+                      <ImageView>
+                          <image>
+                              <Image url="@../images/twemoji_flag-china.png" />
+                          </image>
+                      </ImageView>
+                      <ImageView>
+                          <image>
+                              <Image url="@../images/twemoji_flag-iraq.png" />
+                          </image>
+                      </ImageView>
+                      <ImageView>
+                          <image>
+                              <Image url="@../images/twemoji_flag-mexico.png" />
+                          </image>
+                      </ImageView>
+           <ImageView>
+                          <image>
+                              <Image url="@../images/twemoji_flag-monaco.png" />
+                          </image>
+                      </ImageView>
+                      <ImageView>
+                          <image>
+                              <Image url="@../images/twemoji_flag-wales.png" />
+                          </image>
+                      </ImageView>
+                      <ImageView>
+                          <image>
+                              <Image url="@../images/twemoji_flag-egypt.png" />
+                          </image>
+                      </ImageView>
+                      <ImageView fitHeight="25.0" fitWidth="23.0">
+                          <image>
+                              <Image url="@../images/openmoji_flag-england.png" />
+                          </image>
+                      </ImageView>
+         </children></HBox>
+      <Label layoutX="90.0" layoutY="117.0" text="CURRENCY CONVERTER" textFill="#9eee60">
+         <font>
+            <Font name="Moneywise" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

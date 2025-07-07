@@ -1,0 +1,66 @@
+
+.container{
+    -fx-background-color: #2B5029;
+}
+
+.navbar{
+    -fx-pref-width: 430;
+    -fx-pref-heigth: 40;
+    -fx-background-color: #27891E;
+    -fx-background-radius: 100;
+}
+
+.btn-nav {
+    -fx-background-color: #a7dd7a;
+    -fx-padding: 4px;
+    -fx-border-width: 1px;
+    -fx-border-color:black;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+}
+
+.vbox-dash {
+    -fx-background-color: white;
+    -fx-padding: 10px;
+    -fx-background-radius: 14px;
+    -fx-border-color:black;
+    -fx-border-radius: 14px;
+}
+
+.btn-dash {
+    -fx-background-color: #a7dd7a;
+    -fx-border-width: 1px;
+    -fx-border-color:black;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+}
+
+.bg-hbox {
+    -fx-background-color: #D3E9AB;
+}
+
+.combobox-1 {
+    -fx-background-color: white;
+    
+}
+
+.combobox-2 {
+    -fx-background-color: white;
+    ;
+}
+
+.pane-bgatas{
+    -fx-background-color: white;
+    -fx-border-color:black;
+    -fx-border-radius: 8px;
+}
+
+.teksf-cmbox1{
+    -fx-background-color: white;
+
+}
+
+.teksf-cmbox2{
+    -fx-background-color: white;
+    
+}

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<Pane prefHeight="694.0" prefWidth="430.0" styleClass="container" stylesheets="@../styles/primary.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.converter_currency.Controllers.PrimaryController">
+    <children>
+        <HBox prefHeight="52.0" prefWidth="431.0" />
+        <HBox alignment="CENTER_LEFT" layoutY="4.0" prefHeight="52.0" prefWidth="448.0" spacing="275.0" styleClass="navbar">
+            <children>
+                <ImageView>
+                    <image>
+                        <Image url="@../images/logo.png" />
+                    </image>
+                </ImageView>
+                <HBox alignment="CENTER_RIGHT" prefHeight="40.0" prefWidth="121.0" spacing="15.0">
+                    <children>
+                        <Button mnemonicParsing="false" styleClass="btn-nav" text="Bantuan">
+                            <font>
+                                <Font name="Arial Black" size="12.0" />
+                            </font>
+                        </Button>
+                        <ImageView>
+                            <image>
+                                <Image url="@../images/nav.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                    <padding>
+                        <Insets right="8.0" />
+                    </padding>
+                </HBox>
+            </children>
+            <padding>
+                <Insets left="8.0" />
+            </padding>
+        </HBox>
+        <Pane layoutX="78.0" layoutY="117.0" prefHeight="363.0" prefWidth="286.0" styleClass="vbox-dash">
+            <children>
+                <Pane layoutX="40.0" layoutY="70.0" prefHeight="32.0" prefWidth="209.0" styleClass="pane-bgatas">
+                    <children>
+                        <ComboBox fx:id="countryComboBox" layoutX="136.0" layoutY="4.0" prefHeight="25.0" prefWidth="67.0" styleClass="combobox-1">
+                            <cursor>
+                                <Cursor fx:constant="DEFAULT" />
+                            </cursor>
+                        </ComboBox>
+                    </children>
+                </Pane>
+                <HBox alignment="CENTER" layoutX="42.0" layoutY="110.0" prefHeight="100.0" prefWidth="200.0" spacing="8.0">
+                    <children>
+                        <ImageView>
+                            <image>
+                                <Image url="@../images/array.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView rotate="180.0">
+                            <image>
+                                <Image url="@../images/array.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </HBox>
+                <Pane layoutX="38.0" layoutY="223.0" prefHeight="32.0" prefWidth="209.0" styleClass="pane-bgatas" />
+                <ComboBox fx:id="countryComboBoxResult" layoutX="173.0" layoutY="226.0" prefHeight="25.0" prefWidth="67.0" styleClass="combobox-2" />
+                <TextField fx:id="fieldUser" layoutX="45.0" layoutY="73.0" prefHeight="25.0" prefWidth="136.0" promptText="ISI JUMLAH....." styleClass="teksf-cmbox1">
+                    <font>
+                        <Font name="Times New Roman" size="12.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="fieldHasil" layoutX="45.0" layoutY="226.0" prefHeight="25.0" prefWidth="136.0" promptText="Hasil Currenycy" styleClass="teksf-cmbox2">
+                    <font>
+                        <Font name="Times New Roman" size="12.0" />
+                    </font>
+                </TextField>
+            <Label fx:id="clockLabel" layoutX="125" layoutY="10" prefHeight="30" prefWidth="45" textFill="GREEN" />
+            <Label layoutX="61.0" layoutY="17.0" text="Real time" textFill="#91f861" />
+            </children>
+        </Pane>
+        <Text fill="#a7dd7a" layoutX="80.0" layoutY="506.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BAGAIMANA CARA KERJA KALKULATOR KURS INI?">
+            <font>
+                <Font name="Moneywise" size="14.0" />
+            </font>
+        </Text>
+        <VBox alignment="TOP_CENTER" layoutX="31.0" layoutY="512.0" prefHeight="142.0" prefWidth="381.0" spacing="14.0">
+            <children>
+                <TextFlow textAlignment="CENTER">
+                    <children>
+                        <Text fill="#f2efef" strokeType="OUTSIDE" strokeWidth="0.0" text="Kalkulator Kurs akan menunjukkan berapa nilai uang Anda dalam mata uang lain dengan nilai tukar nyata. Anda dapat mengonversi mata uang dengan cepat dan mudah.">
+                            <font>
+                                <Font name="Times New Roman" size="12.0" />
+                            </font>
+                        </Text>
+                    </children>
+                </TextFlow>
+                <TextFlow layoutX="10.0" layoutY="10.0" textAlignment="CENTER">
+                    <children>
+                        <Text fill="#fcefef" strokeType="OUTSIDE" strokeWidth="0.0" text="Cukup masukkan jumlah ke dalam kalkulator kurs di atas, pilih mata uang asal dan tujuan, dan sistem kami akan mengonversi mata uang Anda dengan kurs pasar tengah (kurs yang biasanya Anda temukan di Google)." wrappingWidth="340.984375">
+                            <font>
+                                <Font name="Times New Roman" size="12.0" />
+                            </font>
+                        </Text>
+                    </children>
+                </TextFlow>
+            </children>
+        </VBox>
+        <Text fill="#a7dd7a" layoutX="87.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CURRENCY CONVERTER">
+            <font>
+                <Font name="Moneywise" size="26.0" />
+            </font>
+        </Text>
+        <HBox alignment="CENTER" layoutX="-6.0" layoutY="647.0" prefHeight="47.0" prefWidth="437.0" spacing="25.0" styleClass="bg-hbox">
+            <children>
+                <ImageView>
+                    <image>
+                        <Image url="@../images/twemoji_flag-monaco.png" />
+                    </image>
+                </ImageView>
+                <ImageView>
+                    <image>
+                        <Image url="@../images/twemoji_flag-mexico.png" />
+                    </image>
+                </ImageView>
+                <ImageView>
+                    <image>
+                        <Image url="@../images/twemoji_flag-iraq.png" />
+                    </image>
+                </ImageView>
+                <ImageView>
+                    <image>
+                        <Image url="@../images/twemoji_flag-china.png" />
+                    </image>
+                </ImageView>
+                <ImageView>
+                    <image>
+                        <Image url="@../images/twemoji_flag-wales.png" />
+                    </image>
+                </ImageView>
+                <ImageView>
+                    <image>
+                        <Image url="@../images/twemoji_flag-egypt.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="25.0" fitWidth="23.0">
+                    <image>
+                        <Image url="@../images/openmoji_flag-england.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </HBox>
+        <Text layoutX="118.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="konfersi dari ">
+            <font>
+                <Font name="Times New Roman" size="12.0" />
+            </font>
+        </Text>
+        <Text layoutX="116.0" layoutY="337.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dikonfersi menjadi">
+            <font>
+                <Font name="Times New Roman" size="12.0" />
+            </font>
+        </Text>
+    </children>
+</Pane>
